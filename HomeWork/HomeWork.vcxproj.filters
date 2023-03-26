@@ -18,13 +18,13 @@
     <ClCompile Include="starx.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="learning.c">
+    <ClCompile Include="parentheses2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test.c">
+    <ClCompile Include="parentheses.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test2.c">
+    <ClCompile Include="reversWordStruct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="permutation.cpp">
@@ -34,9 +34,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="maze.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="tester.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

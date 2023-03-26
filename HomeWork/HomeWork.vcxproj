@@ -127,14 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="learning.c" />
+    <ClCompile Include="parentheses2.c" />
     <ClCompile Include="maze.c" />
     <ClCompile Include="permutation.cpp" />
     <ClCompile Include="reverseWord.c" />
     <ClCompile Include="starx.c" />
-    <ClCompile Include="test.c" />
-    <ClCompile Include="test2.c" />
-    <ClCompile Include="tester.c" />
+    <ClCompile Include="parentheses.c" />
+    <ClCompile Include="reversWordStruct.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
