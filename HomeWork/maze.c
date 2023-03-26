@@ -101,7 +101,7 @@ void maze_print(char maze[6][6])
 	}
 }
 
-int main(void)
+int main_maze(void)
 {
 	int r = 0;
 	int c = 0;
