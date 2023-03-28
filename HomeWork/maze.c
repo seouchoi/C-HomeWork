@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #define MAX_STACK_SIZE 100
 #define MAZE_SIZE 6
@@ -141,7 +142,7 @@ int main_maze(void)
 
 
 
-/*
+
 	2차원 배열로 미로 1개 생성
 	int 2개로 쥐의 위치 생성
 	쥐가 움직일 수 있는 위치를 담은 2차원 스택을 생성

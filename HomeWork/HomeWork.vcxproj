@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="card.c" />
     <ClCompile Include="parentheses2.c" />
     <ClCompile Include="maze.c" />
     <ClCompile Include="permutation.cpp" />
