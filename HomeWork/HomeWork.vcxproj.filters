@@ -39,5 +39,8 @@
     <ClCompile Include="card.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="editor.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include<stdlib.h>
 #define MAX_CARD_SIZE 10000
@@ -101,3 +102,4 @@ int main(void)
 	printf("%d", q.cardTop[q.rear]);
 	return 0;
 }
+*/
