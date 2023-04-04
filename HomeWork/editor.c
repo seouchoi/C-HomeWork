@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #define MAX_LIST_SIZE 200
 
 typedef char element;
@@ -127,8 +128,7 @@ int main(void)
 	char b;
 	char item;
 	int order;
-
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < strlen(a); i++)
 	{
 		insert(&L, i, a[i]);
 	}
