@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <string.h>
 #define MAX_LIST_SIZE 200
@@ -155,3 +156,4 @@ int main(void)
 	
 	print_list(&L);
 }
+*/
