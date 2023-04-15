@@ -90,7 +90,7 @@ DListNode* right_countNode(countNode* c, DListNode* tmp)
    
     if (tmp->data == 0)
     {
-        tmp = tmp->plink;
+        tmp = tmp->nlink;
         c->cntnlink = tmp->nlink;
         c->cntplink = tmp->plink;
     }
@@ -123,23 +123,37 @@ int main(void)
 
     while (1)
     {
+        if (head == head->nlink)
+        {
+            break;
+        }
         if (nodeNum < 0)
         {
             for (int j = nodeNum; j < 0; j++)
             {
                 tmp = left_countNode(c, tmp);
+                
             }
             tmp_next = tmp->nlink;
+            if (tmp_next == head)
+            {
+                tmp_next = tmp_next->nlink;
+            }
             nodeNum = ddelete(head, tmp);   
             tmp = tmp_next;
         }
-        else if (nodeNum > 0)
+        else if (nodeNum >= 0)
         {
-            for (int k = 0; k < nodeNum; k++)
+            for (int k = 0; k < nodeNum-1; k++)
             {
                 tmp = right_countNode(c, tmp);
+                
             }
             tmp_next = tmp->nlink;
+            if (tmp_next == head)
+            {
+                tmp_next = tmp_next->nlink;
+            }
             nodeNum = ddelete(head, tmp);
             tmp = tmp_next;
         }
