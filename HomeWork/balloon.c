@@ -1,4 +1,4 @@
-/*
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -47,23 +47,23 @@ int ddelete(DListNode* head, DListNode* removed)
     if (head == removed)return;
     removed->plink->nlink = removed->nlink;
     removed->nlink->plink = removed->plink;
-    printf("%d",removed->data);
+    printf("터뜨린 풍선 : %d\n",removed->data);
     int a = removed->number;
-    printf("%d", a);
+    printf("나온 숫자 : %d\n", a);
     free(removed);
     return a;
 }
 
 typedef struct countNode
 {
-    element count;
+    
     struct countNode* cntnlink;
     struct countNode* cntplink;
 }countNode;
 
 void init_countNode(DListNode* head, countNode* c)
 {
-    c->count = 0;
+    
     c->cntnlink = head;
     c->cntplink = head;
 }
@@ -73,10 +73,12 @@ DListNode* left_countNode(countNode* c,DListNode* tmp)
     tmp = tmp->plink;
     c->cntnlink = tmp->nlink;
     c->cntplink = tmp->plink;
-    c->count++;
+    
     if (tmp->data == 0)
     {
-        c->count--;
+        tmp = tmp->plink;
+        c->cntnlink = tmp->nlink;
+        c->cntplink = tmp->plink;
     }
     return tmp;
 }
@@ -85,10 +87,12 @@ DListNode* right_countNode(countNode* c, DListNode* tmp)
     tmp = tmp->nlink;
     c->cntnlink = tmp->nlink;
     c->cntplink = tmp->plink;
-    c->count++;
+   
     if (tmp->data == 0)
     {
-        c->count--;
+        tmp = tmp->plink;
+        c->cntnlink = tmp->nlink;
+        c->cntplink = tmp->plink;
     }
     return tmp;
 }
@@ -101,27 +105,46 @@ int main(void)
     int number = rand() % (2 * input + 1) - input;
     DListNode* head =(DListNode*)malloc(sizeof(DListNode));
     countNode* c =(countNode*)malloc(sizeof(countNode));
+    DListNode* tmp_next = (DListNode*)malloc(sizeof(DListNode));
     DListNode* tmp = head;
     init(head);
     dinsert_first(head, input, number);
+
     for (int i = input-1; i > 0; i--)
     {
+        number = rand() % (2 * input + 1) - input;
         dinsert(head, i,number);
     }
     init_countNode(head, c);
     tmp=right_countNode(c, tmp);
+    tmp_next = tmp->nlink;
     int nodeNum = ddelete(head, tmp);
+    tmp = tmp_next;
 
-    if (nodeNum < 0)
+    while (1)
     {
-        for (int j = nodeNum; j < 0; j++)
+        if (nodeNum < 0)
         {
-            tmp = left_countNode(c, tmp);
+            for (int j = nodeNum; j < 0; j++)
+            {
+                tmp = left_countNode(c, tmp);
+            }
+            tmp_next = tmp->nlink;
+            nodeNum = ddelete(head, tmp);   
+            tmp = tmp_next;
         }
-        ddelete(head, tmp);
+        else if (nodeNum > 0)
+        {
+            for (int k = 0; k < nodeNum; k++)
+            {
+                tmp = right_countNode(c, tmp);
+            }
+            tmp_next = tmp->nlink;
+            nodeNum = ddelete(head, tmp);
+            tmp = tmp_next;
+        }
     }
     
-    
 }
-*/
+
 //현재위치노드 tmp를 생성해야함.

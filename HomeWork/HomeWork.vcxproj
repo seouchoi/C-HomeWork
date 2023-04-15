@@ -129,7 +129,6 @@
   <ItemGroup>
     <ClCompile Include="balloon.c" />
     <ClCompile Include="card.c" />
-    <ClCompile Include="clone.c" />
     <ClCompile Include="editor.c" />
     <ClCompile Include="josephus.c" />
     <ClCompile Include="parentheses2.c" />

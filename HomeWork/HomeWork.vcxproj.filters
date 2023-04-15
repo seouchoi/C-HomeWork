@@ -48,8 +48,5 @@
     <ClCompile Include="balloon.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="clone.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
