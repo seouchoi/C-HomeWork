@@ -124,6 +124,7 @@ int main(void)
     {
         if (head == head->nlink)
         {
+            printf("남은 풍선이 없습니다.");
             break;
         }
         if (nodeNum < 0)
