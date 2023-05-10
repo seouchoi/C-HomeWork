@@ -138,6 +138,8 @@
     <ClCompile Include="starx.c" />
     <ClCompile Include="parentheses.c" />
     <ClCompile Include="reversWordStruct.c" />
+    <ClCompile Include="tree.c" />
+    <ClCompile Include="treeArry.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

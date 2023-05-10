@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -162,3 +163,4 @@ int main(void)
 }
 
 //현재위치노드 tmp를 생성해야함.
+*/
