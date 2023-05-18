@@ -131,15 +131,17 @@
     <ClCompile Include="card.c" />
     <ClCompile Include="editor.c" />
     <ClCompile Include="josephus.c" />
+    <ClCompile Include="merge_Sort.c" />
     <ClCompile Include="parentheses2.c" />
     <ClCompile Include="maze.c" />
     <ClCompile Include="permutation.cpp" />
-    <ClCompile Include="reverseWord.c" />
+    <ClCompile Include="quick_Sort.c" />
+    <ClCompile Include="reverse_Word.c" />
+    <ClCompile Include="selection_Sort.c" />
     <ClCompile Include="starx.c" />
     <ClCompile Include="parentheses.c" />
-    <ClCompile Include="reversWordStruct.c" />
-    <ClCompile Include="tree.c" />
-    <ClCompile Include="treeArry.c" />
+    <ClCompile Include="revers_Word_Struct.c" />
+    <ClCompile Include="tree_Arry.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

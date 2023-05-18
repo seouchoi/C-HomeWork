@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_ARRAY_SIZE 10000
@@ -169,3 +170,4 @@ int main(void) {
     }
     
 }
+*/

@@ -24,13 +24,13 @@
     <ClCompile Include="parentheses.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="reversWordStruct.c">
+    <ClCompile Include="revers_Word_Struct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="permutation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="reverseWord.c">
+    <ClCompile Include="reverse_Word.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="maze.c">
@@ -48,10 +48,16 @@
     <ClCompile Include="balloon.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="tree.c">
+    <ClCompile Include="tree_Arry.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="treeArry.c">
+    <ClCompile Include="selection_Sort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="merge_Sort.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="quick_Sort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
