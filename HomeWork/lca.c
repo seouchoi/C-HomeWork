@@ -68,6 +68,7 @@ int main(void) {
 	printf("노드 갯수를 입력 : ");
 	scanf("%d", &node);
 	for (int i = 0; i < node-1; i++) {
+		printf("노드 입력 : ");
 		scanf("%d %d", &u, &v);
 		if (visited[u] == 0 && visited[v] == 1) //v가 u보다 깊어야함
 		{
