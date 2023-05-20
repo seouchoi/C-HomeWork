@@ -131,6 +131,7 @@
     <ClCompile Include="card.c" />
     <ClCompile Include="editor.c" />
     <ClCompile Include="josephus.c" />
+    <ClCompile Include="lca.c" />
     <ClCompile Include="merge_Sort.c" />
     <ClCompile Include="parentheses2.c" />
     <ClCompile Include="maze.c" />
