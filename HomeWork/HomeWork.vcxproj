@@ -143,6 +143,7 @@
     <ClCompile Include="parentheses.c" />
     <ClCompile Include="revers_Word_Struct.c" />
     <ClCompile Include="tree_Arry.c" />
+    <ClCompile Include="virus.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

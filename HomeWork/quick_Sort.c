@@ -4,13 +4,10 @@
 #include <stdlib.h>
 #define swap(a,b) {int tmp=a; a=b; b=tmp;}
 
-
 int partition(int list[], int left, int right) {
 	int low = left;
 	int high = right + 1;
 	int pivot = list[left];
-	
-	
 		do
 		{
 			do

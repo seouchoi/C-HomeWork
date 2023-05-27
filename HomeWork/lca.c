@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #define MAX_NODE 50001
 #define MAX_DEPTH 20
@@ -31,8 +32,8 @@ int findLCA(int u, int v) {
 		if (parent[u][i] != parent[v][i])
 		{
 			u = parent[u][i];
-			v = parent[v][i];				/*만약 for문 안에 else(u와 v가 같을 때)를 넣는다면 init과정에서 모두 0으로 초기화 되어있는 값과
-										  맞아떨어져 문제가 생길 수 있음. ex) tree[10][15] = 0, tree[2][15] = 0; 그러므로 else문 실행*/
+			v = parent[v][i];				//만약 for문 안에 else(u와 v가 같을 때)를 넣는다면 init과정에서 모두 0으로 초기화 되어있는 값과
+										    //맞아떨어져 문제가 생길 수 있음. ex) tree[10][15] = 0, tree[2][15] = 0; 그러므로 else문 실행
 		}									
 	}
 	return parent[u][0];
@@ -53,12 +54,12 @@ void init_tree(int node) {
 void makeTree(int cur, int root, int curDepth) {
 	visited[cur] = 1;
 	depth[cur] = curDepth;
-	parent[cur][0] = parent;
+	parent[cur][0] = root;
 	
 	for (int i = 1; i < MAX_DEPTH; i++)
 	{
 		int ancestor = parent[cur][i - 1];					//현재 노드의 조상을 등록해주는 작업이다.
-		parent[cur][i] = parent[ancestor][i - 1];				//반복문에서 약간의 불필요한 작업이 수행되지만 영향 X
+		parent[cur][i] = parent[ancestor][i - 1];			//반복문에서 약간의 불필요한 작업이 수행되지만 영향 X
 	}
 }
 
@@ -94,3 +95,4 @@ int main(void) {
 		printf("공통조상 : %d\n", findLCA(a, b));
 	}
 }
+*/
