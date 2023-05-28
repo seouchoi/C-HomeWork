@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="balloon.c" />
     <ClCompile Include="card.c" />
+    <ClCompile Include="connected_Component.c" />
     <ClCompile Include="editor.c" />
     <ClCompile Include="josephus.c" />
     <ClCompile Include="lca.c" />

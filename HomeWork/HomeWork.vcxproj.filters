@@ -66,5 +66,8 @@
     <ClCompile Include="virus.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="connected_Component.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

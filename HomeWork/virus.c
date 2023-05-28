@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -36,12 +37,12 @@ void insert_vertex(GraphType* g, int vertex) {
 }
 
 void insert_edge(GraphType* g, int start, int end) {
-    GraphNode* node;
     if (start >= g->n || end >= g->n)
     {
         printf("»ðÀÔ¿À·ù");
         return;
     }
+    GraphNode* node;
     node = (GraphNode*)malloc(sizeof(GraphNode));
     node->vertex = end;
     node->link = g->adj_Head[start];
@@ -86,3 +87,4 @@ int main(void) {
     
     free(g);
 }
+*/
